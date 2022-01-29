@@ -16,5 +16,13 @@ const nums2 = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8];
 const nums3 = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 
 function bubbleSort(nums) {
-  // TODO
+  const num = nums.slice();
+  for (let i = 0; i < num.length - 1; i++) {
+    for (let j = 0; j < num.length - 1 - i; i++) {
+      if (num[j] > num[j + 1]) {
+        [num[j] = num[j + 1]] = [(num[j + 1], num[j ])];
+      }
+    }
+  }
+  return array;
 }
