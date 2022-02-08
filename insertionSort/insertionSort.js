@@ -30,6 +30,19 @@
     6. move to next item and repeat
 */
 
-function insertionSort(arr) {
-  //TODO
+function insertionSort(array) {
+  for (var i = 0; i < array.length; i++) {
+    var val = array[i];
+    var hole = i;
+    while (hole && val < array[hole - 1]) {
+      array[hole] = array[hole - 1];
+      hole -= 1;
+    }
+    array[hole] = val;
+  }
+  return array;
 }
+insertionSort([6, 8, 6, 2, 8, 1, 5, 2, 5, 4]); // [(1, 2, 2, 4, 5, 5, 6, 6, 8, 8)];
+
+
+

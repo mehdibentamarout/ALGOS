@@ -18,11 +18,11 @@ const nums3 = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 function bubbleSort(nums) {
   const num = nums.slice();
   for (let i = 0; i < num.length - 1; i++) {
-    for (let j = 0; j < num.length - 1 - i; i++) {
+    for (let j = 0; j < num.length - 1 - i; j++) {
       if (num[j] > num[j + 1]) {
-        [num[j] = num[j + 1]] = [(num[j + 1], num[j ])];
+        [num[j], num[j + 1]] = [num[j + 1], num[j]];
       }
     }
   }
-  return array;
+  return num;
 }
