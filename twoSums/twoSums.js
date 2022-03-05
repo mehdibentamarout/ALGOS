@@ -28,5 +28,13 @@
 // output: [0,1]
 
 function twoSums(arr, target) {
-    //TODO
+  for (let i = 0; i < arr.length; i++) {
+    const nums = arr[i];
+    const juju = target - nums;
+    for (let j = i + 1; i < nums.length; j++) {
+      if (nums[j]===juju)return [i,j] {
+        
+      }
+    }
   }
+}
